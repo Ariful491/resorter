@@ -23,7 +23,7 @@ class ResortController extends Controller
         if ($request->paginatItem){
             $paginator =  $request->paginatItem;
         }else{
-            $paginator = 1;
+            $paginator = 10;
         }
         if ($request->sort && $request->column){
             $sort =  $request->sort;

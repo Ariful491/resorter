@@ -11,6 +11,9 @@ export default {
             }
             reader.readAsDataURL(file);
 
+        }, thumbnail: function (e) {
+          return 'http://127.0.0.1:8000/'+e;
+
         },
     }
 }

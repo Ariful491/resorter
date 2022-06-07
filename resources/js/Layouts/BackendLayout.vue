@@ -230,21 +230,13 @@
                                     <span>Resort</span>
                                 </Link>
                             </li>
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="bx bx-bitcoin"></i>
-                                    <span >Crypto</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="crypto-wallet.html" key="t-wallet">Wallet</a></li>
-                                    <li><a href="crypto-buy-sell.html" key="t-buy">Buy/Sell</a></li>
-                                    <li><a href="crypto-exchange.html" key="t-exchange">Exchange</a></li>
-                                    <li><a href="crypto-lending.html" key="t-lending">Lending</a></li>
-                                    <li><a href="crypto-orders.html" key="t-orders">Orders</a></li>
-                                    <li><a href="crypto-kyc-application.html" key="t-kyc">KYC Application</a></li>
-                                    <li><a href="crypto-ico-landing.html" key="t-ico">ICO Landing</a></li>
-                                </ul>
+                            <li :class="{'mm-active':route().current('books.index')}">
+                                <Link :href="route('books.index')"  class="waves-effect">
+                                    <i class="bx bx-list-ol"></i>
+                                    <span>Booking</span>
+                                </Link>
                             </li>
+
                         </ul>
                     </div>
                     <!-- Sidebar -->

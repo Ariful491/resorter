@@ -13,4 +13,6 @@ Route::post('/booking',[FrontendController::class,'bookingStore'])->name('book.s
 
 Route::get('/dashboard',[BackendController::class,'index'])->name('dashboard');
 Route::resource('resorts',\App\Http\Controllers\Backend\ResortController::class);
+Route::resource('books',\App\Http\Controllers\Backend\BookController::class);
+Route::post('books/status',[\App\Http\Controllers\Backend\BookController::class,'status'])->name('books.status');
 

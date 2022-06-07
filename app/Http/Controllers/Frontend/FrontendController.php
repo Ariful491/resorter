@@ -55,11 +55,11 @@ class FrontendController extends Controller
         $book->status = 'pending';
         $book->save();
 
-        $data=$book->toArray();
+        $data = $book->toArray();
           Mail::send('book-mail',$data,function ($message) use($data){
           $message->to(User::where('id',1)->value('email'));
           $message->subject('Have a new booking');
           });
-        return Redirect::route('/')->with('success','Congratulation!! You has been booked successfully');
+        return Redirect::route('/')->with('success','Congratulation!! You has been booked successfully!! after confirm you will get mail natification');
     }
 }
