@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-
+    protected $table='bookings';
     public function  resort(){
         return $this->belongsTo(Resort::class);
     }

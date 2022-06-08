@@ -45,7 +45,7 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-5">
                                   <form action="" @submit.prevent="filterer()">
                                       <div class="input-daterange input-group"     >
                                           <input type="date" class="form-control" v-model="from_date" name="from_date" placeholder="Start Date">
@@ -54,12 +54,12 @@
                                       </div>
                                   </form>
                               </div>
-                              <div class="col-sm-3">
-                                  <div class="text-sm-end">
-                                      <Link  :href="route(urlName+'.create')" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-plus me-1"></i> Add New
-                                          {{ pageName }}</Link>
-                                  </div>
-                              </div><!-- end col-->
+<!--                              <div class="col-sm-3">-->
+<!--                                  <div class="text-sm-end">-->
+<!--                                      <Link  :href="route(urlName+'.create')" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-plus me-1"></i> Add New-->
+<!--                                          {{ pageName }}</Link>-->
+<!--                                  </div>-->
+<!--                              </div>&lt;!&ndash; end col&ndash;&gt;-->
                           </div>
 
                           <div class="table-responsive mt-3">

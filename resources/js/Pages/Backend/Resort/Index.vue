@@ -25,7 +25,7 @@
 
                               <div class="col-sm-4">
                                   <div class="search-box me-2 mb-2 d-inline-block">
-                                          <select  @change="filterer()" v-model="paginatItem" class="form-control"  >
+                                          <select  @change="filterer()" v-model="paginatItem" class="form-select"  >
                                               <option value="10">10</option>
                                               <option value="20">20</option>
                                               <option value="50">50</option>
