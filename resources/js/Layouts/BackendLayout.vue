@@ -31,7 +31,7 @@
                             <i class="fa fa-fw fa-bars"></i>
                         </button>
 
-                        
+
                     </div>
 
                     <div class="d-flex">
@@ -43,7 +43,6 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                  aria-labelledby="page-header-search-dropdown">
-
                                 <form class="p-3">
                                     <div class="form-group m-0">
                                         <div class="input-group">
